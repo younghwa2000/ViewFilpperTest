@@ -13,6 +13,40 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!">
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="20dp"
+        >
+        <Button
+            android:id="@+id/but_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/but_text_prev"/>
+
+        <Button
+            android:id="@+id/but_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/but_text_next"/>
+
         </LinearLayout>
+    <ViewFlipper
+        android:id="@+id/view_flip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="#bbfffbb7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <LinearLayout
+            android:background="#bbb7fff8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <LinearLayout
+            android:background="#bbd9b7ff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></LinearLayout>
+    </ViewFlipper>
 </LinearLayout>
